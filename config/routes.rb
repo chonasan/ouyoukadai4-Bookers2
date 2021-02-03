@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :users
+ 
  root to: 'books#top'
+ devise_for :users
  resources :post_comments, only: [:create, :destroy]
 end
