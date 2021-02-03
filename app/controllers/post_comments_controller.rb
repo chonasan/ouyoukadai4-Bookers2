@@ -3,14 +3,18 @@ class PostCommentsController < ApplicationController
     
   def new
   end
+  
+  def edit
+  end
+  
 
+  def show
+  end
+  
   def create
   end
   
-  def index
-  end
-
-  def show
+  def update
   end
 
   def destroy
