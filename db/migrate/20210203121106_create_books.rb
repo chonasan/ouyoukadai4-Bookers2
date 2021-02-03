@@ -1,6 +1,6 @@
-class CreatePostComments < ActiveRecord::Migration[5.2]
+class CreateBooks < ActiveRecord::Migration[5.2]
   def change
-    create_table :post_comments do |t|
+    create_table :books do |t|
       t.integer :user_id
       t.text :title
       t.text :opinion
