@@ -13,6 +13,7 @@ class UsersController < ApplicationController
   end
   
   def edit
+    # @user = current_user
     @user = User.find(params[:id])
   end
   
