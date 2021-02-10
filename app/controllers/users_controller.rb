@@ -14,7 +14,7 @@ class UsersController < ApplicationController
   
   def edit
     @user = current_user
-    @user = User.find(params[:id]) #ビューのurlをとってきている
+   
   end
   
   def update
@@ -26,7 +26,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:name, :image, :introduction)
+    params.require(:user).permit(:name, :profile_image, :introduction)
   end
 
  

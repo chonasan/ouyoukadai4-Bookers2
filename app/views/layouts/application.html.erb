@@ -10,38 +10,24 @@
     <script src="https://kit.fontawesome.com/709e1eb366.js" crossorigin="anonymous"></script>
   </head>
 
+
+
     <% if user_signed_in? %>
-    <body>
-    <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand p-3" href="/">
-          <i class="fas fa-apple-alt"></i>
-          <li>
-            <%= link_to "Bookers", root_path %>
-          </li>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ml-auto">
-            <li>
-              <%= link_to "Home", user_path(current_user) %>
-            </li>
-            <li>
-              <%= link_to "Users", users_path %>
-            </li>
-            <li>
-              <%= link_to "Books",  books_path %>
-            </li>
-            <li>
-              <%= link_to "logout", destroy_user_session_path, method: :delete %>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      <li>
+        <%= link_to "Bookers", root_path %>
+      </li>
+      <li>
+        <%= link_to  "Home", user_path(current_user) %>
+      </li>
+      <li>
+        <%= link_to "Users", users_path %>
+      </li>
+      <li>
+        <%= link_to "Books",  books_path %>
+      </li>
+      <li>
+        <%= link_to "logout", destroy_user_session_path, method: :delete %>
+      </li>
     <% else %>
       <li>
         <%= link_to "Bookers", root_path %>
@@ -58,11 +44,9 @@
       <li>
         <%= link_to "login", new_user_session_path %>
       </li>
+      
+     <% end %>
 
-    <% end %>
-
-      </nav>
-    </header>
 
     <%= yield %>
 
