@@ -14,7 +14,7 @@
           <h2>User info</h2>
           <table class='table'>
             <tr>
-               <td><%= attachment_image_tag @book.user_id, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %></td>
+               <td><%= attachment_image_tag @book.user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %></td>
             </tr>
             <tr>
           	  <th>name</th>

@@ -1740,7 +1740,7 @@ Failures:
        [31m[0m
        [31mActionView::Template::Error:[0m
        [31m  undefined method `name' for nil:NilClass[0m
-       [36m# ./app/views/users/index.html.erb:13:in `_app_views_users_index_html_erb__2658526321878604793_73731280'[0m
+       [36m# ./app/views/users/index.html.erb:13:in `_app_views_users_index_html_erb___4091465195592607158_75515040'[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
@@ -1776,14 +1776,14 @@ Failures:
        [36m# --- Caused by: ---[0m
        [36m# NoMethodError:[0m
        [36m#   undefined method `name' for nil:NilClass[0m
-       [36m#   ./app/views/users/index.html.erb:13:in `_app_views_users_index_html_erb__2658526321878604793_73731280'[0m
+       [36m#   ./app/views/users/index.html.erb:13:in `_app_views_users_index_html_erb___4091465195592607158_75515040'[0m
 
   107) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する ユーザ詳細画面
        [31mFailure/Error: <th><%= @user.name %></th>[0m
        [31m[0m
        [31mActionView::Template::Error:[0m
        [31m  undefined method `name' for nil:NilClass[0m
-       [36m# ./app/views/users/show.html.erb:13:in `_app_views_users_show_html_erb___476144440374754699_64621920'[0m
+       [36m# ./app/views/users/show.html.erb:13:in `_app_views_users_show_html_erb___1078241559763734584_59806540'[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
@@ -1819,17 +1819,17 @@ Failures:
        [36m# --- Caused by: ---[0m
        [36m# NoMethodError:[0m
        [36m#   undefined method `name' for nil:NilClass[0m
-       [36m#   ./app/views/users/show.html.erb:13:in `_app_views_users_show_html_erb___476144440374754699_64621920'[0m
+       [36m#   ./app/views/users/show.html.erb:13:in `_app_views_users_show_html_erb___1078241559763734584_59806540'[0m
 
   108) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する ユーザ情報編集画面
-       [31mFailure/Error: <%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %>[0m
+       [31mFailure/Error: <p><%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %></p>[0m
        [31m[0m
        [31mActionView::Template::Error:[0m
        [31m  undefined method `profile_image_attachment_definition' for nil:NilClass[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/rails/attachment_helper.rb:78:in `attachment_field'[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/rails/attachment_helper.rb:9:in `attachment_field'[0m
-       [36m# ./app/views/users/edit.html.erb:8:in `block in _app_views_users_edit_html_erb__3763379727828539635_80854780'[0m
-       [36m# ./app/views/users/edit.html.erb:2:in `_app_views_users_edit_html_erb__3763379727828539635_80854780'[0m
+       [36m# ./app/views/users/edit.html.erb:14:in `block in _app_views_users_edit_html_erb___3875460257556277083_75653680'[0m
+       [36m# ./app/views/users/edit.html.erb:7:in `_app_views_users_edit_html_erb___3875460257556277083_75653680'[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
@@ -1872,7 +1872,7 @@ Failures:
        [31m[0m
        [31mActionView::Template::Error:[0m
        [31m  undefined method `name' for nil:NilClass[0m
-       [36m# ./app/views/books/index.html.erb:21:in `_app_views_books_index_html_erb___1717069512027038203_75935080'[0m
+       [36m# ./app/views/books/index.html.erb:21:in `_app_views_books_index_html_erb__15441413796802861_70987880'[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
@@ -1908,14 +1908,15 @@ Failures:
        [36m# --- Caused by: ---[0m
        [36m# NoMethodError:[0m
        [36m#   undefined method `name' for nil:NilClass[0m
-       [36m#   ./app/views/books/index.html.erb:21:in `_app_views_books_index_html_erb___1717069512027038203_75935080'[0m
+       [36m#   ./app/views/books/index.html.erb:21:in `_app_views_books_index_html_erb__15441413796802861_70987880'[0m
 
   110) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する 投稿詳細画面
-       [31mFailure/Error: <th><%= @user.name %></th>[0m
+       [31mFailure/Error: <td><%= book.user_id.name %></td>[0m
        [31m[0m
        [31mActionView::Template::Error:[0m
-       [31m  undefined method `name' for nil:NilClass[0m
-       [36m# ./app/views/books/show.html.erb:13:in `_app_views_books_show_html_erb__3744630346236592592_76529900'[0m
+       [31m  undefined method `name' for 2:Integer[0m
+       [36m# ./app/views/books/show.html.erb:60:in `block in _app_views_books_show_html_erb__3479571917458880512_71638260'[0m
+       [36m# ./app/views/books/show.html.erb:54:in `_app_views_books_show_html_erb__3479571917458880512_71638260'[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
@@ -1950,8 +1951,8 @@ Failures:
        [36m# ------------------[0m
        [36m# --- Caused by: ---[0m
        [36m# NoMethodError:[0m
-       [36m#   undefined method `name' for nil:NilClass[0m
-       [36m#   ./app/views/books/show.html.erb:13:in `_app_views_books_show_html_erb__3744630346236592592_76529900'[0m
+       [36m#   undefined method `name' for 2:Integer[0m
+       [36m#   ./app/views/books/show.html.erb:60:in `block in _app_views_books_show_html_erb__3479571917458880512_71638260'[0m
 
   111) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する 投稿編集画面
        [31mFailure/Error: visit edit_book_path(book)[0m
@@ -2466,7 +2467,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.35.1/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:424:in `block (4 levels) in <main>'[0m
 
-Finished in 8.98 seconds (files took 1.41 seconds to load)
+Finished in 9.12 seconds (files took 2.01 seconds to load)
 [31m197 examples, 145 failures[0m
 
 Failed examples:
