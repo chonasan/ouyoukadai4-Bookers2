@@ -3,7 +3,7 @@ class BooksController < ApplicationController
   def show
     @user = User.find(params[:id])
     @book = Book.new
-    @books = Book.all
+    @book = Book.find(params[:id])
   end
 
   def index
@@ -11,6 +11,11 @@ class BooksController < ApplicationController
     @book = Book.new
     @books = Book.all
   end
+  
+  def edit
+    @book = Book.find(params[:id])
+  end
+  
 
   # 　@tweet = Tweet.new(tweet_params)  # フォームから送られてきたデータ(body)をストロングパラメータを経由して@tweetに代入
   #   @tweet.user_id = current_user.id # user_idの情報はフォームからはきていないので、deviseのメソッドを使って「ログインしている自分のid」を代入
@@ -29,6 +34,20 @@ class BooksController < ApplicationController
       render action: :index
      end
   end
+  
+  def update
+    @book = Book.find(params[:id])
+    if @book.update(book_params)
+     flash[:notice] = "Book was successfully created."
+      redirect_to book_path(@book)
+    else
+      render action: :edit
+    end
+  end
+  
+  
+  
+  
 
 end
 
