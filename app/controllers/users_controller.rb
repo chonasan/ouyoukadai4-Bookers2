@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     @user = current_user
     @users = User.all
     @book = Book.new
-    @books = Book.all
+    @books = Book.all #current_user
   end
 
   
