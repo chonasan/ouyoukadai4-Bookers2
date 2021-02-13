@@ -25,8 +25,8 @@ class BooksController < ApplicationController
 
   def create
       @user = current_user
-      @book = Book.new(book_params)
-      @book.user_id = current_user.id
+      @book = Book.new(book_params) #Book.newの:title, :bodyを更新する
+      @book.user_id = current_user.id #nillのidを更新
       @books = Book.all
      if @book.save
       flash[:notice] = "You have created book successfully."
