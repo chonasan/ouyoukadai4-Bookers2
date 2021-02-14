@@ -15,7 +15,12 @@ class UsersController < ApplicationController
 
 
   def edit
-    @user = current_user
+    if @user == current_user
+        render action:edit_user_path(@user)
+    else
+      @user = current_user
+        redirect_to user_path(@user)
+    end
   end
 
   def update
