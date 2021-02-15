@@ -58,15 +58,12 @@ class BooksController < ApplicationController
     redirect_to books_path  
   end
   
+  private
+   def book_params
+    params.require(:book).permit(:title, :body, :profile_image)
+   end
   
-  
-
 end
 
-   private
-    def book_params
-      params.require(:book).permit(:title, :body, :profile_image)
-    end
-    
   
 
