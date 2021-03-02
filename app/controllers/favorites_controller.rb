@@ -12,9 +12,6 @@ class FavoritesController < ApplicationController
     favorite = current_user.favorites.find_by(book_id: book.id)
     favorite.destroy
     redirect_to books_path(book)
-   
-   
-   
   end
   
   

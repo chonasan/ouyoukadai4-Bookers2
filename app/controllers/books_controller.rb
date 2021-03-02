@@ -4,15 +4,17 @@ class BooksController < ApplicationController
     @book = Book.find(params[:id])
     @user = @book.user
     @newbook = Book.new
+    @book_comment = BookComment.new
+    @book_comments = @book.book_comments
   end
+  
 
   def index
-    
     @user = current_user
     @book = Book.new
     @books = Book.all
   end
-  
+
   def edit
      @book = Book.find(params[:id])
     if @book.user == current_user
@@ -21,7 +23,7 @@ class BooksController < ApplicationController
       redirect_to books_path
     end
   end
-  
+
 
   # 　@tweet = Tweet.new(tweet_params)  # フォームから送られてきたデータ(body)をストロングパラメータを経由して@tweetに代入
   #   @tweet.user_id = current_user.id # user_idの情報はフォームからはきていないので、deviseのメソッドを使って「ログインしている自分のid」を代入
@@ -40,7 +42,7 @@ class BooksController < ApplicationController
       render action: :index
      end
   end
-  
+
   def update
     @book = Book.find(params[:id])
     if @book.update(book_params)
@@ -50,19 +52,16 @@ class BooksController < ApplicationController
       render action: :edit
     end
   end
-  
+
   def destroy
     @book = Book.find(params[:id])
     @book.destroy
-    redirect_to books_path  
+    redirect_to books_path
   end
-  
+
   private
    def book_params
     params.require(:book).permit(:title, :body, :profile_image)
    end
-  
+
 end
-
-  
-
