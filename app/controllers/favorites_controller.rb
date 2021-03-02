@@ -13,6 +13,8 @@ class FavoritesController < ApplicationController
     favorite.destroy
     redirect_to books_path(book)
    
+   
+   
   end
   
   
